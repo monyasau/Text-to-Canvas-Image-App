@@ -26,6 +26,7 @@ updateCanvas=()=>{
     canvasContext.fillStyle = canvasSettings.textColor;
     canvasContext.fillText(textInputBox.value, midXAxis, midYAxis);
   downloadBtn.download = textInputBox.value;
+  downloadBtn.title = 'the resulting image can be located in your download folder as "' + textInputBox.value + '.jpg"';
 
 
 }
