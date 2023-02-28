@@ -1,5 +1,6 @@
 
 let textInputBox = document.getElementById("inputBox");
+let downloadBtn = document.getElementById("download");
 
 
 let canvasSettings = {
@@ -24,6 +25,8 @@ updateCanvas=()=>{
     canvasContext.font = `${canvasSettings.fontSize + "px"} ${canvasSettings.fontFamily}`;
     canvasContext.fillStyle = canvasSettings.textColor;
     canvasContext.fillText(textInputBox.value, midXAxis, midYAxis);
+  downloadBtn.download = textInputBox.value;
+
 
 }
 updateFontSize=(selectedFontSize)=>{
